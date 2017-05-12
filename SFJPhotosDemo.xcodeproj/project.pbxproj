@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		812D7F2D1EC45EE20064BBC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 812D7F2C1EC45EE20064BBC3 /* main.m */; };
+		812D7F301EC45EE20064BBC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 812D7F2F1EC45EE20064BBC3 /* AppDelegate.m */; };
+		812D7F361EC45EE20064BBC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 812D7F341EC45EE20064BBC3 /* Main.storyboard */; };
+		812D7F381EC45EE20064BBC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812D7F371EC45EE20064BBC3 /* Assets.xcassets */; };
+		812D7F3B1EC45EE20064BBC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 812D7F391EC45EE20064BBC3 /* LaunchScreen.storyboard */; };
+		812D7F461EC45EE20064BBC3 /* SFJPhotosDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 812D7F451EC45EE20064BBC3 /* SFJPhotosDemoTests.m */; };
+		812D7F511EC45EE20064BBC3 /* SFJPhotosDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 812D7F501EC45EE20064BBC3 /* SFJPhotosDemoUITests.m */; };
+		812D7F781EC467800064BBC3 /* SFJPhotoCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812D7F6E1EC467800064BBC3 /* SFJPhotoCollectionController.m */; };
+		812D7F791EC467800064BBC3 /* SFJPhotosController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812D7F701EC467800064BBC3 /* SFJPhotosController.m */; };
+		812D7F7B1EC467800064BBC3 /* SFJPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 812D7F761EC467800064BBC3 /* SFJPhotoCell.m */; };
+		812D7F7C1EC467800064BBC3 /* SFJPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812D7F771EC467800064BBC3 /* SFJPhotoCell.xib */; };
+		812D7F801EC467CF0064BBC3 /* SFJPhotoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 812D7F7E1EC467CF0064BBC3 /* SFJPhotoCollectionCell.m */; };
+		812D7F811EC467CF0064BBC3 /* SFJPhotoCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812D7F7F1EC467CF0064BBC3 /* SFJPhotoCollectionCell.xib */; };
+		812D7F871EC476FA0064BBC3 /* SFJCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 812D7F861EC476FA0064BBC3 /* SFJCollectionModel.m */; };
+		812D7F8B1EC5A7530064BBC3 /* SFJPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 812D7F8A1EC5A7530064BBC3 /* SFJPhotoManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		812D7F421EC45EE20064BBC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 812D7F201EC45EE20064BBC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 812D7F271EC45EE20064BBC3;
+			remoteInfo = SFJPhotosDemo;
+		};
+		812D7F4D1EC45EE20064BBC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 812D7F201EC45EE20064BBC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 812D7F271EC45EE20064BBC3;
+			remoteInfo = SFJPhotosDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		812D7F281EC45EE20064BBC3 /* SFJPhotosDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFJPhotosDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		812D7F2C1EC45EE20064BBC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		812D7F2E1EC45EE20064BBC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		812D7F2F1EC45EE20064BBC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		812D7F351EC45EE20064BBC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		812D7F371EC45EE20064BBC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		812D7F3A1EC45EE20064BBC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		812D7F3C1EC45EE20064BBC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		812D7F411EC45EE20064BBC3 /* SFJPhotosDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFJPhotosDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		812D7F451EC45EE20064BBC3 /* SFJPhotosDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFJPhotosDemoTests.m; sourceTree = "<group>"; };
+		812D7F471EC45EE20064BBC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		812D7F4C1EC45EE20064BBC3 /* SFJPhotosDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFJPhotosDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		812D7F501EC45EE20064BBC3 /* SFJPhotosDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFJPhotosDemoUITests.m; sourceTree = "<group>"; };
+		812D7F521EC45EE20064BBC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		812D7F6D1EC467800064BBC3 /* SFJPhotoCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFJPhotoCollectionController.h; sourceTree = "<group>"; };
+		812D7F6E1EC467800064BBC3 /* SFJPhotoCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFJPhotoCollectionController.m; sourceTree = "<group>"; };
+		812D7F6F1EC467800064BBC3 /* SFJPhotosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFJPhotosController.h; sourceTree = "<group>"; };
+		812D7F701EC467800064BBC3 /* SFJPhotosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFJPhotosController.m; sourceTree = "<group>"; };
+		812D7F751EC467800064BBC3 /* SFJPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFJPhotoCell.h; sourceTree = "<group>"; };
+		812D7F761EC467800064BBC3 /* SFJPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFJPhotoCell.m; sourceTree = "<group>"; };
+		812D7F771EC467800064BBC3 /* SFJPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFJPhotoCell.xib; sourceTree = "<group>"; };
+		812D7F7D1EC467CF0064BBC3 /* SFJPhotoCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFJPhotoCollectionCell.h; sourceTree = "<group>"; };
+		812D7F7E1EC467CF0064BBC3 /* SFJPhotoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFJPhotoCollectionCell.m; sourceTree = "<group>"; };
+		812D7F7F1EC467CF0064BBC3 /* SFJPhotoCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFJPhotoCollectionCell.xib; sourceTree = "<group>"; };
+		812D7F851EC476FA0064BBC3 /* SFJCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFJCollectionModel.h; sourceTree = "<group>"; };
+		812D7F861EC476FA0064BBC3 /* SFJCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFJCollectionModel.m; sourceTree = "<group>"; };
+		812D7F891EC5A7530064BBC3 /* SFJPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFJPhotoManager.h; sourceTree = "<group>"; };
+		812D7F8A1EC5A7530064BBC3 /* SFJPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFJPhotoManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		812D7F251EC45EE20064BBC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812D7F3E1EC45EE20064BBC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812D7F491EC45EE20064BBC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		812D7F1F1EC45EE20064BBC3 = {
+			isa = PBXGroup;
+			children = (
+				812D7F2A1EC45EE20064BBC3 /* SFJPhotosDemo */,
+				812D7F441EC45EE20064BBC3 /* SFJPhotosDemoTests */,
+				812D7F4F1EC45EE20064BBC3 /* SFJPhotosDemoUITests */,
+				812D7F291EC45EE20064BBC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		812D7F291EC45EE20064BBC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				812D7F281EC45EE20064BBC3 /* SFJPhotosDemo.app */,
+				812D7F411EC45EE20064BBC3 /* SFJPhotosDemoTests.xctest */,
+				812D7F4C1EC45EE20064BBC3 /* SFJPhotosDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		812D7F2A1EC45EE20064BBC3 /* SFJPhotosDemo */ = {
+			isa = PBXGroup;
+			children = (
+				812D7F2E1EC45EE20064BBC3 /* AppDelegate.h */,
+				812D7F2F1EC45EE20064BBC3 /* AppDelegate.m */,
+				812D7F341EC45EE20064BBC3 /* Main.storyboard */,
+				812D7F881EC5A7530064BBC3 /* Tool */,
+				812D7F6C1EC467800064BBC3 /* C */,
+				812D7F711EC467800064BBC3 /* M */,
+				812D7F741EC467800064BBC3 /* V */,
+				812D7F2B1EC45EE20064BBC3 /* Supporting Files */,
+			);
+			path = SFJPhotosDemo;
+			sourceTree = "<group>";
+		};
+		812D7F2B1EC45EE20064BBC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				812D7F371EC45EE20064BBC3 /* Assets.xcassets */,
+				812D7F391EC45EE20064BBC3 /* LaunchScreen.storyboard */,
+				812D7F3C1EC45EE20064BBC3 /* Info.plist */,
+				812D7F2C1EC45EE20064BBC3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		812D7F441EC45EE20064BBC3 /* SFJPhotosDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				812D7F451EC45EE20064BBC3 /* SFJPhotosDemoTests.m */,
+				812D7F471EC45EE20064BBC3 /* Info.plist */,
+			);
+			path = SFJPhotosDemoTests;
+			sourceTree = "<group>";
+		};
+		812D7F4F1EC45EE20064BBC3 /* SFJPhotosDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				812D7F501EC45EE20064BBC3 /* SFJPhotosDemoUITests.m */,
+				812D7F521EC45EE20064BBC3 /* Info.plist */,
+			);
+			path = SFJPhotosDemoUITests;
+			sourceTree = "<group>";
+		};
+		812D7F6C1EC467800064BBC3 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				812D7F6D1EC467800064BBC3 /* SFJPhotoCollectionController.h */,
+				812D7F6E1EC467800064BBC3 /* SFJPhotoCollectionController.m */,
+				812D7F6F1EC467800064BBC3 /* SFJPhotosController.h */,
+				812D7F701EC467800064BBC3 /* SFJPhotosController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		812D7F711EC467800064BBC3 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				812D7F851EC476FA0064BBC3 /* SFJCollectionModel.h */,
+				812D7F861EC476FA0064BBC3 /* SFJCollectionModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		812D7F741EC467800064BBC3 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				812D7F751EC467800064BBC3 /* SFJPhotoCell.h */,
+				812D7F761EC467800064BBC3 /* SFJPhotoCell.m */,
+				812D7F771EC467800064BBC3 /* SFJPhotoCell.xib */,
+				812D7F7D1EC467CF0064BBC3 /* SFJPhotoCollectionCell.h */,
+				812D7F7E1EC467CF0064BBC3 /* SFJPhotoCollectionCell.m */,
+				812D7F7F1EC467CF0064BBC3 /* SFJPhotoCollectionCell.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		812D7F881EC5A7530064BBC3 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				812D7F891EC5A7530064BBC3 /* SFJPhotoManager.h */,
+				812D7F8A1EC5A7530064BBC3 /* SFJPhotoManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		812D7F271EC45EE20064BBC3 /* SFJPhotosDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 812D7F551EC45EE20064BBC3 /* Build configuration list for PBXNativeTarget "SFJPhotosDemo" */;
+			buildPhases = (
+				812D7F241EC45EE20064BBC3 /* Sources */,
+				812D7F251EC45EE20064BBC3 /* Frameworks */,
+				812D7F261EC45EE20064BBC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFJPhotosDemo;
+			productName = SFJPhotosDemo;
+			productReference = 812D7F281EC45EE20064BBC3 /* SFJPhotosDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		812D7F401EC45EE20064BBC3 /* SFJPhotosDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 812D7F581EC45EE20064BBC3 /* Build configuration list for PBXNativeTarget "SFJPhotosDemoTests" */;
+			buildPhases = (
+				812D7F3D1EC45EE20064BBC3 /* Sources */,
+				812D7F3E1EC45EE20064BBC3 /* Frameworks */,
+				812D7F3F1EC45EE20064BBC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				812D7F431EC45EE20064BBC3 /* PBXTargetDependency */,
+			);
+			name = SFJPhotosDemoTests;
+			productName = SFJPhotosDemoTests;
+			productReference = 812D7F411EC45EE20064BBC3 /* SFJPhotosDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		812D7F4B1EC45EE20064BBC3 /* SFJPhotosDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 812D7F5B1EC45EE20064BBC3 /* Build configuration list for PBXNativeTarget "SFJPhotosDemoUITests" */;
+			buildPhases = (
+				812D7F481EC45EE20064BBC3 /* Sources */,
+				812D7F491EC45EE20064BBC3 /* Frameworks */,
+				812D7F4A1EC45EE20064BBC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				812D7F4E1EC45EE20064BBC3 /* PBXTargetDependency */,
+			);
+			name = SFJPhotosDemoUITests;
+			productName = SFJPhotosDemoUITests;
+			productReference = 812D7F4C1EC45EE20064BBC3 /* SFJPhotosDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		812D7F201EC45EE20064BBC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "沙缚柩";
+				TargetAttributes = {
+					812D7F271EC45EE20064BBC3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Q2Z69VY84R;
+						ProvisioningStyle = Automatic;
+					};
+					812D7F401EC45EE20064BBC3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 84NY46NBXF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 812D7F271EC45EE20064BBC3;
+					};
+					812D7F4B1EC45EE20064BBC3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 84NY46NBXF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 812D7F271EC45EE20064BBC3;
+					};
+				};
+			};
+			buildConfigurationList = 812D7F231EC45EE20064BBC3 /* Build configuration list for PBXProject "SFJPhotosDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 812D7F1F1EC45EE20064BBC3;
+			productRefGroup = 812D7F291EC45EE20064BBC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				812D7F271EC45EE20064BBC3 /* SFJPhotosDemo */,
+				812D7F401EC45EE20064BBC3 /* SFJPhotosDemoTests */,
+				812D7F4B1EC45EE20064BBC3 /* SFJPhotosDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		812D7F261EC45EE20064BBC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812D7F3B1EC45EE20064BBC3 /* LaunchScreen.storyboard in Resources */,
+				812D7F381EC45EE20064BBC3 /* Assets.xcassets in Resources */,
+				812D7F811EC467CF0064BBC3 /* SFJPhotoCollectionCell.xib in Resources */,
+				812D7F7C1EC467800064BBC3 /* SFJPhotoCell.xib in Resources */,
+				812D7F361EC45EE20064BBC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812D7F3F1EC45EE20064BBC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812D7F4A1EC45EE20064BBC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		812D7F241EC45EE20064BBC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812D7F801EC467CF0064BBC3 /* SFJPhotoCollectionCell.m in Sources */,
+				812D7F791EC467800064BBC3 /* SFJPhotosController.m in Sources */,
+				812D7F301EC45EE20064BBC3 /* AppDelegate.m in Sources */,
+				812D7F871EC476FA0064BBC3 /* SFJCollectionModel.m in Sources */,
+				812D7F7B1EC467800064BBC3 /* SFJPhotoCell.m in Sources */,
+				812D7F8B1EC5A7530064BBC3 /* SFJPhotoManager.m in Sources */,
+				812D7F2D1EC45EE20064BBC3 /* main.m in Sources */,
+				812D7F781EC467800064BBC3 /* SFJPhotoCollectionController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812D7F3D1EC45EE20064BBC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812D7F461EC45EE20064BBC3 /* SFJPhotosDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812D7F481EC45EE20064BBC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812D7F511EC45EE20064BBC3 /* SFJPhotosDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		812D7F431EC45EE20064BBC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 812D7F271EC45EE20064BBC3 /* SFJPhotosDemo */;
+			targetProxy = 812D7F421EC45EE20064BBC3 /* PBXContainerItemProxy */;
+		};
+		812D7F4E1EC45EE20064BBC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 812D7F271EC45EE20064BBC3 /* SFJPhotosDemo */;
+			targetProxy = 812D7F4D1EC45EE20064BBC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		812D7F341EC45EE20064BBC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				812D7F351EC45EE20064BBC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		812D7F391EC45EE20064BBC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				812D7F3A1EC45EE20064BBC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		812D7F531EC45EE20064BBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		812D7F541EC45EE20064BBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		812D7F561EC45EE20064BBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q2Z69VY84R;
+				INFOPLIST_FILE = SFJPhotosDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shafujiu.SFJPhotosDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		812D7F571EC45EE20064BBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q2Z69VY84R;
+				INFOPLIST_FILE = SFJPhotosDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shafujiu.SFJPhotosDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		812D7F591EC45EE20064BBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 84NY46NBXF;
+				INFOPLIST_FILE = SFJPhotosDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shafujiu.SFJPhotosDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFJPhotosDemo.app/SFJPhotosDemo";
+			};
+			name = Debug;
+		};
+		812D7F5A1EC45EE20064BBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 84NY46NBXF;
+				INFOPLIST_FILE = SFJPhotosDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shafujiu.SFJPhotosDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFJPhotosDemo.app/SFJPhotosDemo";
+			};
+			name = Release;
+		};
+		812D7F5C1EC45EE20064BBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 84NY46NBXF;
+				INFOPLIST_FILE = SFJPhotosDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shafujiu.SFJPhotosDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SFJPhotosDemo;
+			};
+			name = Debug;
+		};
+		812D7F5D1EC45EE20064BBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 84NY46NBXF;
+				INFOPLIST_FILE = SFJPhotosDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shafujiu.SFJPhotosDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SFJPhotosDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		812D7F231EC45EE20064BBC3 /* Build configuration list for PBXProject "SFJPhotosDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812D7F531EC45EE20064BBC3 /* Debug */,
+				812D7F541EC45EE20064BBC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		812D7F551EC45EE20064BBC3 /* Build configuration list for PBXNativeTarget "SFJPhotosDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812D7F561EC45EE20064BBC3 /* Debug */,
+				812D7F571EC45EE20064BBC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		812D7F581EC45EE20064BBC3 /* Build configuration list for PBXNativeTarget "SFJPhotosDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812D7F591EC45EE20064BBC3 /* Debug */,
+				812D7F5A1EC45EE20064BBC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		812D7F5B1EC45EE20064BBC3 /* Build configuration list for PBXNativeTarget "SFJPhotosDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812D7F5C1EC45EE20064BBC3 /* Debug */,
+				812D7F5D1EC45EE20064BBC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 812D7F201EC45EE20064BBC3 /* Project object */;
+}
